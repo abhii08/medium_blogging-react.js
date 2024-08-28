@@ -49,9 +49,7 @@ npm install
 ```
 
 #### 3. Set up environment variables:
-```bash
 Create a .env file in the backend directory with the necessary variables (e.g., MongoDB URI, JWT secret).
-```
 
 #### 4. Run the backend server:
 ```bash
