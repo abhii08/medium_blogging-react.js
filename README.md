@@ -64,6 +64,6 @@ npm run dev
 
 #### 6. Access the application at
 ```bash
-http://localhost:3000.
+http://localhost:3000
 ```
 
