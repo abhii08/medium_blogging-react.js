@@ -3,7 +3,14 @@
 # MEDIUM-BLOGGING
 
 This is a full-stack Medium-like blogging platform built using modern web technologies. It includes features for user authentication, blog creation, editing, and viewing.
-
+# Tech Stack
+React in the frontend
+Cloudflare workers in the backend
+zod as the validation library, type inference for the frontend types
+Typescript as the language
+Prisma as the ORM, with connection pooling
+Postgres as the database
+jwt for authentication
 ## Project Structure
 
 The project is organized into three main directories:
