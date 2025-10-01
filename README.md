@@ -11,7 +11,7 @@ This is a full-stack Medium-like blogging platform built using modern web techno
 - Prisma as the ORM, with connection pooling  
 - Postgres as the database  
 - JWT for authentication
-- 
+  
 ## Project Structure
 
 The project is organized into three main directories:
