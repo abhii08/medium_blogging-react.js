@@ -17,26 +17,29 @@ This is a full-stack Medium-like blogging platform built using modern web techno
 The project is organized into three main directories:
 
 ### 1. `backend`
-   - **Description**: Contains the server-side code, handling APIs, user authentication, and database operations.
-   - **Technologies**: Node.js, Hono, MongoDB.
-   - **Files**:
-     - `server.js`: Entry point for the backend.
-     - `models/`: Mongoose schemas for users and posts.
-     - `routes/`: API routes for authentication, posts, and user management.
+  - **Runtime**: Cloudflare Workers (serverless)
+  - **Framework**: Hono.js (lightweight web framework for Cloudflare Workers)
+  - **Database**:
+    - Prisma ORM (with Prisma Accelerate for edge compatibility)
+    - PostgreSQL (database, referenced in Prisma schema)
+  - **Authentication**: JWT (JSON Web Tokens)
+  - **Validation**: Zod (via shared @abhinav08/medium-blogging package)
+  - **Deployment**: Wrangler (Cloudflare Workers CLI)
 
 ### 2. `common`
-   - **Description**: Houses shared utilities and constants used across both the frontend and backend.
-   - **Files**:
-     - `config.js`: Configuration files for environment variables.
-     - `utils.js`: Common utility functions.
+   - **Validation**: Zod (for input validation)
+   - **Type Sharing**: TypeScript types shared between frontend and backend
 
 ### 3. `frontend`
-   - **Description**: Contains the client-side code, responsible for the UI and user interactions.
-   - **Technologies**: React.js, Tailwind CSS.
-   - **Files**:
-     - `pages/`: Next.js pages for different routes (e.g., login, register, blog view).
-     - `components/`: Reusable UI components like headers, footers, and forms.
-     - `styles/`: Global and component-specific styles using Tailwind CSS.
+   - **Framework**: React 18 with TypeScript
+   - **Build Tool**: Vite
+   - **Styling**:
+     - Tailwind CSS (utility-first CSS framework)
+     - PostCSS (for processing Tailwind)
+   - **Routing**: React Router v6
+   - **HTTP Client**: Axios
+   - **State Management**: React Hooks (useState, useEffect, custom hooks)
+   - **Build Output**: Static files (SPA)
 
 ## Setup
 
